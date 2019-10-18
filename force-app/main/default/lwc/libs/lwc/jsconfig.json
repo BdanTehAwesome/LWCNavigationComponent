@@ -2,38 +2,20 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "c/userApp": [
-                "../../userApp/userApp.js"
-            ],
-            "c/lwcRouter": [
-                "lwcRouter/lwcRouter.js"
-            ],
-            "c/link": [
-                "lwcRouter/lwc/link/link.js"
-            ],
-            "c/eventHandler": [
-                "lwcRouter/lwc/eventHandler/eventHandler.js"
-            ],
-            "c/route": [
-                "lwcRouter/lwc/route/route.js"
-            ],
-            "c/router": [
-                "lwcRouter/lwc/router/router.js"
+            "c/billingInfo": [
+                "../../billingInfo/billingInfo.js"
             ],
             "c/companyInfo": [
                 "../../companyInfo/companyInfo.js"
             ],
-            "c/billingInfo": [
-                "../../billingInfo/billingInfo.js"
-            ],
             "c/employeeInfo": [
                 "../../employeeInfo/employeeInfo.js"
             ],
-            "c/back": [
-                "lwcRouter/lwc/back/back.js"
-            ],
             "c/navComponent": [
                 "../../navComponent/navComponent.js"
+            ],
+            "c/userApp": [
+                "../../userApp/userApp.js"
             ]
         },
         "experimentalDecorators": true

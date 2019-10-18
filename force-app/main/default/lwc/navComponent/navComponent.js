@@ -4,9 +4,9 @@ import {fireEvent} from 'c/eventHandler';
 export default class Home extends LightningElement {
 
     @track selectedTab ={
-        compInf:"tabSelected",
-        billInf:"notSelected",
-        empInf:"notSelected"
+        compInf:"",
+        billInf:"",
+        empInf:""
     }
     @track currentComponent="";
 

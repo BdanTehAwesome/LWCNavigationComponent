@@ -3,38 +3,20 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/userApp": [
-                "userApp/userApp.js"
-            ],
-            "c/lwcRouter": [
-                "libs/lwc/lwcRouter/lwcRouter.js"
-            ],
-            "c/link": [
-                "libs/lwc/lwcRouter/lwc/link/link.js"
-            ],
-            "c/eventHandler": [
-                "libs/lwc/lwcRouter/lwc/eventHandler/eventHandler.js"
-            ],
-            "c/route": [
-                "libs/lwc/lwcRouter/lwc/route/route.js"
-            ],
-            "c/router": [
-                "libs/lwc/lwcRouter/lwc/router/router.js"
+            "c/billingInfo": [
+                "billingInfo/billingInfo.js"
             ],
             "c/companyInfo": [
                 "companyInfo/companyInfo.js"
             ],
-            "c/billingInfo": [
-                "billingInfo/billingInfo.js"
-            ],
             "c/employeeInfo": [
                 "employeeInfo/employeeInfo.js"
             ],
-            "c/back": [
-                "libs/lwc/lwcRouter/lwc/back/back.js"
-            ],
             "c/navComponent": [
                 "navComponent/navComponent.js"
+            ],
+            "c/userApp": [
+                "userApp/userApp.js"
             ]
         }
     },
