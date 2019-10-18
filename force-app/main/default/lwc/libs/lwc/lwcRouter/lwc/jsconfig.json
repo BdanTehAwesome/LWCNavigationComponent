@@ -17,6 +17,12 @@
             ],
             "c/userApp": [
                 "../../../../userApp/userApp.js"
+            ],
+            "c/route": [
+                "route/route.js"
+            ],
+            "c/eventHandler": [
+                "eventHandler/eventHandler.js"
             ]
         }
     },
