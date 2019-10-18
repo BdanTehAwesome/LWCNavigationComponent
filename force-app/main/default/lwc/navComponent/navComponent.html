@@ -1,0 +1,20 @@
+<template>
+    <div class="background">
+        <div class="slds-m-top_medium">
+            <div >
+                <div >
+                <header class="slds-builder-header">
+                    <nav class="slds-builder-header__item slds-builder-header__nav">
+                        <lightning-menu-item  label="Company Info" title="company" onclick={clickEvent} class={selectedTab.compInf}></lightning-menu-item>
+                        <lightning-menu-item  label="Billing Info" title="billing" onclick={clickEvent} class={selectedTab.billInf}></lightning-menu-item>
+                        <lightning-menu-item  label="Employee Info" title="employee" onclick={clickEvent} class={selectedTab.empInf}></lightning-menu-item>
+                    </nav>
+                </header>
+                </div>
+            </div>
+        </div>
+        <div>
+            <slot></slot>
+        </div>
+    </div>
+</template>

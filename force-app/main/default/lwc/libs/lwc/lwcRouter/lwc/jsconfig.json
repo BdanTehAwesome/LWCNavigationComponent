@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/userApp": [
+                "../../../../userApp/userApp.js"
+            ],
+            "c/lwcRouter": [
+                "../lwcRouter.js"
+            ],
+            "c/link": [
+                "link/link.js"
+            ],
+            "c/eventHandler": [
+                "eventHandler/eventHandler.js"
+            ],
+            "c/route": [
+                "route/route.js"
+            ],
+            "c/router": [
+                "router/router.js"
+            ],
+            "c/companyInfo": [
+                "../../../../companyInfo/companyInfo.js"
+            ],
+            "c/billingInfo": [
+                "../../../../billingInfo/billingInfo.js"
+            ],
+            "c/employeeInfo": [
+                "../../../../employeeInfo/employeeInfo.js"
+            ],
+            "c/back": [
+                "back/back.js"
+            ],
+            "c/navComponent": [
+                "../../../../navComponent/navComponent.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

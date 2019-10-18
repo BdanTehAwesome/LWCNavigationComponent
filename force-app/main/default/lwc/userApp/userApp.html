@@ -1,0 +1,18 @@
+<template>
+    <c-nav-component>
+        <c-router root = "/"  onpayloadchange = {handelPayloadChange}>
+            <c-route path="/">
+                <c-nav-component payload = {payload}></c-nav-component>
+            </c-route>
+            <c-route path="/companyInfo">
+                <c-company-info payload = {payload}></c-company-info>
+            </c-route>
+            <c-route path="/billingInfo">
+                <c-billing-info payload = {payload}></c-billing-info>
+            </c-route>
+            <c-route path="/employeeInfo">
+                <c-employee-info payload = {payload}></c-employee-info>
+            </c-route>
+        </c-router>
+    </c-nav-component>
+</template>
