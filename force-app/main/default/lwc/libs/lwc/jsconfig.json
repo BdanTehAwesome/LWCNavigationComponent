@@ -16,6 +16,12 @@
             ],
             "c/userApp": [
                 "../../userApp/userApp.js"
+            ],
+            "c/route": [
+                "lwcRouter/lwc/route/route.js"
+            ],
+            "c/eventHandler": [
+                "lwcRouter/lwc/eventHandler/eventHandler.js"
             ]
         },
         "experimentalDecorators": true

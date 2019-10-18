@@ -11,12 +11,18 @@ export default class Home extends LightningElement {
     @track currentComponent="";
 
     clickEvent(event){
-        var currentcomponent = event.target.title
-        if(currentcomponent==='company') {
+        var currentcomponent = event.target ; 
+        this.template.querySelectorAll('lightning-menu-item').forEach(element => {
+            element.classList.add('notSelected'); // Add too everything
+            element.classList.remove('tabSelected'); // Remove from everything
+        });
+        currentcomponent.classList.toggle('tabSelected') 
+        this.to= currentcomponent.getAttribute("data-route") ; 
+
+        /* if(currentcomponent==='company') {
             this.selectedTab.compInf="tabSelected";
             this.selectedTab.billInf="notSelected";
             this.selectedTab.empInf="notSelected";
-            this.to="/companyInfo"
         }
         else if(currentcomponent==='billing') {
             this.selectedTab.compInf="notSelected";
@@ -29,7 +35,7 @@ export default class Home extends LightningElement {
             this.selectedTab.billInf="notSelected";
             this.selectedTab.empInf="tabSelected";
             this.to="/employeeInfo"
-        }
+        } */
         event.preventDefault();
         try {
             if(!this.to){

@@ -17,6 +17,12 @@
             ],
             "c/userApp": [
                 "userApp/userApp.js"
+            ],
+            "c/route": [
+                "libs/lwc/lwcRouter/lwc/route/route.js"
+            ],
+            "c/eventHandler": [
+                "libs/lwc/lwcRouter/lwc/eventHandler/eventHandler.js"
             ]
         }
     },
