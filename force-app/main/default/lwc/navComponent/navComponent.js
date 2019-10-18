@@ -16,7 +16,8 @@ export default class Home extends LightningElement {
             element.classList.add('notSelected'); // Add too everything
             element.classList.remove('tabSelected'); // Remove from everything
         });
-        currentcomponent.classList.toggle('tabSelected') 
+        currentcomponent.classList.toggle('tabSelected') ;
+        currentcomponent.classList.toggle('notSelected') ;
         this.to= currentcomponent.getAttribute("data-route") ; 
 
         /* if(currentcomponent==='company') {
