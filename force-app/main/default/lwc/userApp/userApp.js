@@ -6,4 +6,8 @@ export default class UserApp extends LightningElement {
     handelPayloadChange(event){
         this.payload = event.detail
     }
+    changeTheNav(event){
+        var navItem = event.target.getAttribute("data-nav-id") ; 
+        this.template.querySelector('c-nav-component').changeActiveNav(navItem) ; 
+    }
 }

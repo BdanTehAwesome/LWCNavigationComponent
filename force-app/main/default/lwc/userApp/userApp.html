@@ -15,4 +15,9 @@
             </c-route>
         </c-router>
     </c-nav-component>
+    <lightning-card title="Update the nav" >
+        <lightning-button label="Company" onclick={changeTheNav} data-nav-id="companyInfo" ></lightning-button> 
+        <lightning-button label="Billing" onclick={changeTheNav} data-nav-id="billingInfo" ></lightning-button> 
+        <lightning-button label="Employee" onclick={changeTheNav} data-nav-id="employeeInfo" ></lightning-button> 
+    </lightning-card>
 </template>

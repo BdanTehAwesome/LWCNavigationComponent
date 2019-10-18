@@ -1,4 +1,4 @@
-import { LightningElement,track } from 'lwc';
+import { LightningElement,track,api } from 'lwc';
 import {fireEvent} from 'c/eventHandler';
 
 export default class Home extends LightningElement {
@@ -9,7 +9,18 @@ export default class Home extends LightningElement {
         empInf:""
     }
     @track currentComponent="";
-
+    @api
+    changeActiveNav(navItem) {
+        var theId = '[data-nav-id="'+ navItem+'"]'
+        var currentcomponent = this.template.querySelector(theId) ; 
+        this.template.querySelectorAll('lightning-menu-item').forEach(element => {
+            element.classList.add('notSelected'); // Add too everything
+            element.classList.remove('tabSelected'); // Remove from everything
+        });
+        currentcomponent.classList.toggle('tabSelected') ;
+        currentcomponent.classList.toggle('notSelected') ;
+        this.to= currentcomponent.getAttribute("data-route") ; 
+    }
     clickEvent(event){
         var currentcomponent = event.target ; 
         this.template.querySelectorAll('lightning-menu-item').forEach(element => {

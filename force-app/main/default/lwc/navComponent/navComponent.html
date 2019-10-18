@@ -5,9 +5,9 @@
                 <div >
                 <header class="slds-builder-header">
                     <nav class="slds-builder-header__item slds-builder-header__nav">
-                        <lightning-menu-item  label="Company Info" title="company" onclick={clickEvent} data-route="/companyInfo"  class={selectedTab.compInf}></lightning-menu-item>
-                        <lightning-menu-item  label="Billing Info" title="billing" onclick={clickEvent}  data-route="/billingInfo"  class={selectedTab.billInf}></lightning-menu-item>
-                        <lightning-menu-item  label="Employee Info" title="employee" onclick={clickEvent}  data-route="/employeeInfo" class={selectedTab.empInf}></lightning-menu-item>
+                        <lightning-menu-item data-nav-id="companyInfo"  label="Company Info" title="company" onclick={clickEvent} data-route="/companyInfo"  class={selectedTab.compInf}></lightning-menu-item>
+                        <lightning-menu-item data-nav-id="billingInfo"  label="Billing Info" title="billing" onclick={clickEvent}  data-route="/billingInfo"  class={selectedTab.billInf}></lightning-menu-item>
+                        <lightning-menu-item data-nav-id="employeeInfo"  label="Employee Info" title="employee" onclick={clickEvent}  data-route="/employeeInfo" class={selectedTab.empInf}></lightning-menu-item>
                     </nav>
                 </header>
                 </div>
