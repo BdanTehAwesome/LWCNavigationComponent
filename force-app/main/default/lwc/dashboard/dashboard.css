@@ -1,0 +1,7 @@
+.addborder{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+}

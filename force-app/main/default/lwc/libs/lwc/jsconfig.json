@@ -22,6 +22,9 @@
             ],
             "c/eventHandler": [
                 "lwcRouter/lwc/eventHandler/eventHandler.js"
+            ],
+            "c/dashboard": [
+                "../../dashboard/dashboard.js"
             ]
         },
         "experimentalDecorators": true

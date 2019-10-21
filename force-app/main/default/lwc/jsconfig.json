@@ -23,6 +23,9 @@
             ],
             "c/eventHandler": [
                 "libs/lwc/lwcRouter/lwc/eventHandler/eventHandler.js"
+            ],
+            "c/dashboard": [
+                "dashboard/dashboard.js"
             ]
         }
     },

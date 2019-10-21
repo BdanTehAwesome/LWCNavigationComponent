@@ -1,23 +1,30 @@
 <template>
-    <c-nav-component>
+    <div class={showdashboard}>
+        <c-dashboard payload = {payload} onclick={changeTheNav} component="companyInfo"></c-dashboard>
+        <c-dashboard payload = {payload} onclick={changeTheNav} component="billingInfo"></c-dashboard>
+        <c-dashboard payload = {payload} onclick={changeTheNav} component="employeeInfo"></c-dashboard>
+    </div>
+    <div class={shownav}>
+        <c-nav-component>
         <c-router root = "/"  onpayloadchange = {handelPayloadChange}>
             <c-route path="/">
                 <c-nav-component payload = {payload}></c-nav-component>
             </c-route>
             <c-route path="/companyInfo">
-                <c-company-info payload = {payload}></c-company-info>
+                <c-company-info payload = {payload} onclick={changeTheNav} component="companyInfo"></c-company-info>
             </c-route>
             <c-route path="/billingInfo">
-                <c-billing-info payload = {payload}></c-billing-info>
+                <c-billing-info payload = {payload} onclick={changeTheNav} component="billingInfo"></c-billing-info>
             </c-route>
             <c-route path="/employeeInfo">
-                <c-employee-info payload = {payload}></c-employee-info>
+                <c-employee-info payload = {payload} onclick={changeTheNav} component="employeeInfo"></c-employee-info>
             </c-route>
         </c-router>
     </c-nav-component>
-    <lightning-card title="Update the nav" >
-        <lightning-button label="Company" onclick={changeTheNav} data-nav-id="companyInfo" ></lightning-button> 
+</div>
+    <!--lightning-card title="Update the nav" >
+        <lightning-button label="Company" change-the-nav={changeTheNav} data-nav-id="companyInfo" ></lightning-button> 
         <lightning-button label="Billing" onclick={changeTheNav} data-nav-id="billingInfo" ></lightning-button> 
         <lightning-button label="Employee" onclick={changeTheNav} data-nav-id="employeeInfo" ></lightning-button> 
-    </lightning-card>
+    </lightning-card-->
 </template>
