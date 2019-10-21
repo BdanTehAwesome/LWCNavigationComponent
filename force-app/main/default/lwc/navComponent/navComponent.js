@@ -20,6 +20,21 @@ export default class Home extends LightningElement {
         currentcomponent.classList.toggle('tabSelected') ;
         currentcomponent.classList.toggle('notSelected') ;
         this.to= currentcomponent.getAttribute("data-route") ; 
+
+        event.preventDefault();
+        try {
+            if(!this.to){
+                throw new Error(
+                    'To attribute is mandetory for navigate'
+                );
+            }
+            this.className ="colourred";
+            fireEvent('navigateTo', {to:this.to, payload:this.payload});
+        } catch (error) {
+            // eslint-disable-next-line no-console
+            console.error(error, error.stack)
+        }
+        event.stopPropagation();
     }
     clickEvent(event){
         var currentcomponent = event.target ; 
